@@ -1,42 +1,57 @@
 :root {
     --brownbg: #3c3935;
-    --brownbgtransp: #3c3935a6;
+    --brownbgtransp: #3c3935d2;
     --test1: rgb(17, 153, 119);
     --test2: rgb(230, 107, 148);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
 }
 
 .logospace {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background: radial-gradient(white, white, honeydew);
 }
 
 .navbar a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration-line: none;
     color: white;
 }
 
 nav {
     padding-left: 30%;
     padding-right: 30%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
     background: transparent;
+    font-size: 20px;
+    
 }
 
 .imagebg {
-    display: block;
-    background-color: var(--test2);
-    background-image: image(".\images\hebrideslandscape.jpg");
+    background: radial-gradient(white, honeydew);
+    background-image: url("bg/sheep.png");
+    background-size: cover;
+    background-position: center center;
+    height: auto;
 }
 
 .contentbox {
-    height: 80%;
+    height: 800px;
     width: 80%;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     background-color: var(--brownbgtransp);
@@ -44,10 +59,20 @@ nav {
 }
 
 h1 {
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: white;
 }
 
 main {
     display: flex;
     justify-content: center;
+}
+
+footer {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    background: radial-gradient(white, honeydew);
 }
