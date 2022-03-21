@@ -1,0 +1,53 @@
+:root {
+    --brownbg: #3c3935;
+    --brownbgtransp: #3c3935a6;
+    --test1: rgb(17, 153, 119);
+    --test2: rgb(230, 107, 148);
+}
+
+.logospace {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.navbar a {
+    color: white;
+}
+
+nav {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: transparent;
+}
+
+.imagebg {
+    display: block;
+    background-color: var(--test2);
+    background-image: image(".\images\hebrideslandscape.jpg");
+}
+
+.contentbox {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--brownbgtransp);
+    background-blend-mode: darken;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
