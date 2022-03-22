@@ -1,14 +1,14 @@
 :root {
     --brownbg: #3c3935;
-    --brownbgtransp: #3c3935d2;
-    --test1: rgb(17, 153, 119);
-    --test2: rgb(230, 107, 148);
+    --brownbgtransp: #3c3935e5;
+    --graybg: #161616da;
+    --lightbg: #c0c0c0da;
 }
 
 html, body {
     margin: 0;
-    height: 100%;
 }
+
 
 .logospace {
     display: flex;
@@ -20,48 +20,78 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-decoration-line: none;
+    text-shadow: 0 0 5px #131212;
     color: white;
 }
 
-nav {
+
+
+.navbar {
     padding-left: 30%;
     padding-right: 30%;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.navbar {
     display: flex;
     justify-content: space-around;
     background: transparent;
     font-size: 20px;
-    
+}
+
+.parallax {
+    perspective-origin: center;
+    position: relative;
+    perspective: 100vh;
 }
 
 .imagebg {
+    left: 0;
+    top: 0;
+    width: 100%;
+
     background: radial-gradient(white, honeydew);
     background-image: url("bg/sheep.png");
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
-    background-position: center center;
-    height: auto;
+    background-repeat: no-repeat;
+
 }
 
 .contentbox {
-    height: 800px;
+    height: 90%;
     width: 80%;
-    padding: 20px;
-    margin: 50px;
-    margin-bottom: 100px;
+    padding: 3%;
+    margin: 5%;
+    margin-bottom: 10%;
     display: flex;
-    justify-content: center;
-    background-color: var(--brownbgtransp);
-    background-blend-mode: darken;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: radial-gradient(rgba(138, 138, 138, 0.6), rgba(109, 109, 109, 0.6));
+    box-shadow: 1 1 20px #131212;
 }
 
 h1 {
-    padding-top: 40px;
+    padding-top: 1%;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    color: white;
+    text-shadow: 0 0 5px #131212c0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 5px #131212c0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
     color: white;
 }
 
@@ -75,4 +105,21 @@ footer {
     height: 300px;
     justify-content: center;
     background: radial-gradient(white, honeydew);
+}
+
+.footnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.footnav a {
+    padding-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-decoration-line: none;
+    text-shadow: 0 0 2px #1312129c;
+    color: rgb(34, 34, 34);
 }
