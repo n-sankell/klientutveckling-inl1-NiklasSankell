@@ -96,7 +96,7 @@ html, body {
 .contentbox {
   height: 90%;
   min-height: 400px;
-  width: 80%;
+  width: 70%;
   padding: 2%;
   margin: 3%;
   margin-bottom: 3%;
@@ -142,7 +142,26 @@ html, body {
   font-weight: 400;
   margin-left: 5%;
   margin-right: 5%;
-  color: white;
+  color: honeydew;
+}
+
+.contentbox .homeinfo p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.contentbox .homeinfo p.lastline {
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.antiquewoolcombs {
+    align-self: flex-start;
+    background-image: url("../images/bg/antiquewoolcombs.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 300px;
 }
 
 main {
