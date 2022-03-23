@@ -7,12 +7,20 @@
 
 html, body {
   margin: 0;
+  box-sizing: border-box;
+  size: 100vh;
 }
 
 .logospace {
   display: flex;
   justify-content: center;
   background: radial-gradient(white, white, honeydew);
+}
+
+.logospace img {
+    height: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navbar a {
@@ -64,36 +72,45 @@ html, body {
 }
 
 .imagebg::after {
-  background-image: url("bg/sheep.png");
+    background-image: url("bg/sheep.png");
 }
 
 .contentbox {
   height: 90%;
   width: 80%;
-  padding: 3%;
-  margin: 5%;
-  margin-bottom: 10%;
+  padding: 2%;
+  margin: 3%;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  box-shadow: 1 1 20px #131212;
   background: radial-gradient(
     rgba(138, 138, 138, 0.6),
     rgba(109, 109, 109, 0.6)
   );
-  box-shadow: 1 1 20px #131212;
 }
 
-.contentbox h1 {
+.contentbox article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contentbox article h1 {
   padding-top: 1%;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  text-align: center;
+  font-weight: 600;
   color: white;
   text-shadow: 0 0 2px #131212c0;
 }
 
-.contentbox h2 {
+.contentbox article h2 {
   font-family: "Roboto", sans-serif;
+  text-align: center;
   font-weight: 400;
   font-size: 20px;
   font-style: italic;
@@ -101,10 +118,11 @@ html, body {
   text-shadow: 0 0 2px #131212c0;
 }
 
-.contentbox p {
+.contentbox article p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
   color: white;
 }
 
@@ -115,11 +133,10 @@ main {
 
 footer {
   display: flex;
-  height: 30%;
+  height: 300px;
   justify-content: center;
-  background: radial-gradient(white, honeydew);
-  background-size: cover;
-  background-repeat: repeat;
+  background: linear-gradient(honeydew, white);
+  box-sizing: border-box;
 }
 
 .footnav {
@@ -136,10 +153,71 @@ footer {
   margin-right: 20%;
   text-decoration-line: none;
   text-shadow: 0 0 1px #1312129c;
-  color: rgb(71, 71, 71);
+  color: #474747;
 }
 
 .footnav a:hover {
   color: rgb(34, 34, 34);
   text-shadow: 0 0 2px #1312129c;
+}
+
+.footspace {
+    display: block;
+    height: 10px;
+    width: 100%;
+}
+
+.footspace:nth-of-type(2) {
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+.footlayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.credits p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #474747;
+}
+
+.contactnav .find,.mail {
+    display: flex;
+    justify-content: center;
+    text-decoration-line: none;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.contactnav .social {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social a div.linkwrap {
+    margin-top: 15%;
+    background-size: contain;
+    opacity: 60%;
+    height: 45px;
+    width: 45px;
+}
+
+a.instagram div.linkwrap {
+    background-image: url("social/instagram.png");
+}
+
+a.facebook div.linkwrap {
+    background-image: url("social/facebook.png");
+}
+
+a.pinterest div.linkwrap {
+    background-image: url("social/pinterest.png");
 }
