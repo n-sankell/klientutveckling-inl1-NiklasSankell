@@ -72,7 +72,7 @@ html, body {
 }
 
 .imagebg::after {
-    background-image: url("bg/sheep.png");
+    background-image: url("../images/bg/sheep.png");
 }
 
 .contentbox {
@@ -211,13 +211,13 @@ footer {
 }
 
 a.instagram div.linkwrap {
-    background-image: url("social/instagram.png");
+    background-image: url("../images/logos/instagram.png");
 }
 
 a.facebook div.linkwrap {
-    background-image: url("social/facebook.png");
+    background-image: url("../images/logos/facebook.png");
 }
 
 a.pinterest div.linkwrap {
-    background-image: url("social/pinterest.png");
+    background-image: url("../images/logos/pinterest.png");
 }
