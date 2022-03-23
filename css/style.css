@@ -71,12 +71,27 @@ html, body {
   z-index: -1;
 }
 
-.imagebg::after {
+.mainbg::after {
     background-image: url("../images/bg/sheep.png");
+}
+
+.aboutbg::after {
+    background-image: url("../images/bg/sheepherd.jpg");
+    margin-top: 100px;
+}
+
+.contactbg::after {
+    background-image: url("../images/bg/oldmap.jpg");
+    margin-top: 150px;
+}
+
+.refbg::after {
+    background-image: url("../images/bg/yarnclose.jpg");
 }
 
 .contentbox {
   height: 90%;
+  min-height: 400px;
   width: 80%;
   padding: 2%;
   margin: 3%;
