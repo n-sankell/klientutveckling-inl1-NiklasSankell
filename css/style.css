@@ -7,7 +7,6 @@
 
 html, body {
   margin: 0;
-  box-sizing: border-box;
 }
 
 .logospace {
@@ -53,7 +52,7 @@ html, body {
 
 .parent {
   position: relative;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -72,20 +71,26 @@ html, body {
 
 .mainbg::after {
     background-image: url("../images/bg/sheep.png");
+    margin-top: 150px;
+    height: 100ch;
 }
 
 .aboutbg::after {
     background-image: url("../images/bg/sheepherd.jpg");
     margin-top: 100px;
+    height: 100ch;
 }
 
 .contactbg::after {
     background-image: url("../images/bg/oldmap.jpg");
     margin-top: 150px;
+    height: 100ch;
 }
 
 .refbg::after {
     background-image: url("../images/bg/yarnclose.jpg");
+    margin-top: 150px;
+    height: 100ch;
 }
 
 .contentbox {
