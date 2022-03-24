@@ -5,7 +5,8 @@
   --lightbg: #c0c0c0da;
 }
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
@@ -16,9 +17,9 @@ html, body {
 }
 
 .logospace img {
-    height: 270px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  height: 270px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navbar a {
@@ -70,27 +71,27 @@ html, body {
 }
 
 .mainbg::after {
-    background-image: url("../images/bg/sheep.png");
-    margin-top: 150px;
-    height: 100ch;
+  background-image: url("../images/bg/sheep.png");
+  margin-top: 150px;
+  height: 100ch;
 }
 
 .aboutbg::after {
-    background-image: url("../images/bg/sheepherd.jpg");
-    margin-top: 100px;
-    height: 100ch;
+  background-image: url("../images/bg/sheepherd.jpg");
+  margin-top: 100px;
+  height: 100ch;
 }
 
 .contactbg::after {
-    background-image: url("../images/bg/oldmap.jpg");
-    margin-top: 150px;
-    height: 100ch;
+  background-image: url("../images/bg/oldmap.jpg");
+  margin-top: 150px;
+  height: 100ch;
 }
 
 .refbg::after {
-    background-image: url("../images/bg/yarnclose.jpg");
-    margin-top: 150px;
-    height: 100ch;
+  background-image: url("../images/bg/yarnclose.jpg");
+  margin-top: 150px;
+  height: 100ch;
 }
 
 .contentbox {
@@ -112,10 +113,10 @@ html, body {
 }
 
 .contentbox article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .contentbox article h1 {
@@ -146,22 +147,22 @@ html, body {
 }
 
 .contentbox .homeinfo p {
-    margin-left: 15%;
-    margin-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .contentbox .homeinfo p.lastline {
-    color: white;
-    font-style: italic;
-    text-align: center;
+  color: white;
+  font-style: italic;
+  text-align: center;
 }
 
 .antiquewoolcombs {
-    align-self: flex-start;
-    background-image: url("../images/bg/antiquewoolcombs.jpg");
-    background-size: cover;
-    height: 200px;
-    width: 300px;
+  align-self: flex-start;
+  background-image: url("../images/bg/antiquewoolcombs.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 300px;
 }
 
 main {
@@ -193,7 +194,7 @@ footer {
   color: #474747;
 }
 
-@media screen and (max-width:1204px) {
+@media screen and (max-width: 1204px) {
   .navbar a {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -216,7 +217,78 @@ footer {
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 1200px) {
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    transform: translateZ(-1px) scale(1.8);
+    z-index: -1;
+    height: 100%;
+  }
+
+  .mainbg::after {
+    background-image: url("../images/bg/sheep.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    margin-top: 170px;
+    height: 100%;
+  }
+
+  .aboutbg::after {
+    background-image: url("../images/bg/sheepherd.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    height: 100%;
+  }
+
+  .contactbg::after {
+    background-image: url("../images/bg/oldmap.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220%;
+    height: 100%;
+  }
+
+  .refbg::after {
+    background-image: url("../images/bg/yarnclose.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    transform: translateZ(-1px) scale(2.4);
+    z-index: -1;
+    height: 100%;
+  }
+
+  .contentbox article h1 {
+    padding-top: 1%;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0 0 2px #131212c0;
+  }
+  
+  .contentbox article h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 2px #131212c0;
+  }
+
   .navbar a {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -234,7 +306,7 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
   }
-  
+
   .footnav a {
     margin-left: 5%;
     margin-right: 5%;
@@ -251,62 +323,63 @@ footer {
 }
 
 .footspace {
-    display: block;
-    height: 10px;
-    width: 100%;
+  display: block;
+  height: 10px;
+  width: 100%;
 }
 
 .footspace:nth-of-type(2) {
-    display: block;
-    height: 50px;
-    width: 100%;
+  display: block;
+  height: 50px;
+  width: 100%;
 }
 
 .footlayout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .credits p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    color: #474747;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #474747;
 }
 
-.contactnav .find,.mail {
-    display: flex;
-    justify-content: center;
-    text-decoration-line: none;
-    color: #474747;
-    margin-bottom: 10px;
+.contactnav .find,
+.mail {
+  display: flex;
+  justify-content: center;
+  text-decoration-line: none;
+  color: #474747;
+  margin-bottom: 10px;
 }
 
 .contactnav .social {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .social a div.linkwrap {
-    margin-top: 15%;
-    background-size: contain;
-    opacity: 60%;
-    height: 45px;
-    width: 45px;
+  margin-top: 15%;
+  background-size: contain;
+  opacity: 60%;
+  height: 45px;
+  width: 45px;
 }
 
 a.instagram div.linkwrap {
-    background-image: url("../images/logos/instagram.png");
+  background-image: url("../images/logos/instagram.png");
 }
 
 a.facebook div.linkwrap {
-    background-image: url("../images/logos/facebook.png");
+  background-image: url("../images/logos/facebook.png");
 }
 
 a.pinterest div.linkwrap {
-    background-image: url("../images/logos/pinterest.png");
+  background-image: url("../images/logos/pinterest.png");
 }
