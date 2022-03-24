@@ -174,7 +174,6 @@ footer {
   height: 300px;
   justify-content: center;
   background: linear-gradient(honeydew, white);
-  box-sizing: border-box;
 }
 
 .footnav {
@@ -192,6 +191,58 @@ footer {
   text-decoration-line: none;
   text-shadow: 0 0 1px #1312129c;
   color: #474747;
+}
+
+@media screen and (max-width:1204px) {
+  .navbar a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-decoration-line: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: 0 0 5px #131212e3;
+    color: white;
+  }
+
+  .navbar {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    background: transparent;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .navbar a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-decoration-line: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-shadow: 0 0 5px #131212e3;
+    color: white;
+  }
+
+  .footnav {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+  
+  .footnav a {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 30px;
+    text-decoration-line: none;
+    text-shadow: 0 0 1px #1312129c;
+    color: #474747;
+  }
 }
 
 .footnav a:hover {
