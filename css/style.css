@@ -218,6 +218,19 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+
+  .wrapper {
+    height: 100vh;
+    perspective: 2px;
+  }
+  
+  .parent {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   .parallax::after {
     content: " ";
     position: absolute;
@@ -231,8 +244,8 @@ footer {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    margin-top: 170px;
-    height: 100%;
+    margin-top: 160px;
+    height: 100ch;
   }
 
   .aboutbg::after {
@@ -240,7 +253,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200%;
-    height: 100%;
+    height: 100ch;
   }
 
   .contactbg::after {
@@ -248,7 +261,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 220%;
-    height: 100%;
+    height: 100ch;
   }
 
   .refbg::after {
@@ -256,7 +269,14 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 180%;
-    height: 100%;
+    height: 100ch;
+  }
+
+  footer {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    background: linear-gradient(honeydew, white);
   }
 }
 
@@ -265,7 +285,7 @@ footer {
   .parallax::after {
     content: " ";
     position: absolute;
-    transform: translateZ(-1px) scale(2.4);
+    transform: translateZ(-1px) scale(1.5);
     z-index: -1;
     height: 100%;
   }
