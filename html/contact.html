@@ -29,14 +29,51 @@
 
             <main>
                 <div class="contentbox">
-                    <article class="homeinfo">
-                        <h1>Sustainible yarn production from Hebridean sheep</h1>
-                        <h2>When you get our product, a piece of the harsh Hebridean nature follows.</h2>
-                        <p> 
-                            Our goal is to provide the highest quality yarn to both retailers and consumers directly. Following the cultural heritage of hand-crafted, hand-dyed wool with just natural and locally produced materials.  
+                    <section class="content" class="contact">
+                        <h1>Where to find us?</h1>
+                        <a class="find" href="https://goo.gl/maps/hL9PJpBmhvii6kARA" target="_blank">
+                            <h2>Isle of Skye - Inner Hebrides</h2>
+                        </a>
+                    </section>
+                <div class="addresswrapper">
+                    <Address class="content" class="contact">
+                        <div class="right">
+                        <figure class="farmImg">
+                            <img title = "the farm" src="../images/informative/theFarm.png" alt="picture of the farm">
+                        </figure>
+                        </div>
+                        <div class="left">
+                        <p>
+                            Address: IV56 8FD, United Kingdom<br />
+                            Post: Dunvegan Post Office, Isle of Skye <br />
+                            IV55 8WA, United Kingdom<br />
+                            Phone: +44 1470 521201<br />
+                            contact@ullinish.com
                         </p>
-                        
-                    </article>
+                        <p></p>
+                        </div>
+                    </Address>
+                </div>
+                    <form id="form" class="content" class="contact" autocomplete="on" method="post" enctype="application/x-www-form-urlencoded">
+                        <p class="lastline">
+                            Hope to hear from you soon!
+                        </p>
+                        <h3>Use the formula for a faster response!</h3>
+                        <div class="input">
+                        <label for="errand">Errand</label>
+                        <select name="errand" id="errand">
+                            <option value="order" selected >Order product</option>
+                            <option value="questions">Questions</option>
+                            <option value="feedback">Web page feedback</option>
+                        </select>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email here" required/>
+                        <label for="text">Message</label>
+                        <input type="text" id="text" placeholder="Enter your message here" required/>
+                        </div>
+                        <input type="submit" value="Submit" id="submit" />
+                    </form>
+                    
                 </div>
             </main>
 
@@ -44,7 +81,7 @@
                 <div class="footlayout">
                     <div class="footspace"></div>
                     <nav>
-                        <div class="footnav">            
+                        <div class="footnav">
                             <a href="index.html">Start</a>
                             <a href="about.html">About</a>
                             <a href="references.html">References</a>
@@ -76,6 +113,6 @@
             </footer>
         </div>
     </div>
-
+    <script src="../script/contact.js" />
 </body>
 </html>

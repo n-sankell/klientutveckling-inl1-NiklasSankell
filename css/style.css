@@ -78,13 +78,13 @@ body {
 
 .aboutbg::after {
   background-image: url("../images/bg/sheepherd.jpg");
-  margin-top: 100px;
+  margin-top: 150px;
   height: 100ch;
 }
 
 .contactbg::after {
   background-image: url("../images/bg/oldmap.jpg");
-  margin-top: 150px;
+  margin-top: 250px;
   height: 100ch;
 }
 
@@ -112,37 +112,39 @@ body {
   );
 }
 
-.contentbox article {
+.contentbox .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.contentbox article h1 {
+.contentbox .content h1 {
   padding-top: 1%;
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 600;
   color: white;
   text-shadow: 0 0 2px #131212c0;
+  z-index: 1;
 }
 
-.contentbox article h2 {
+.contentbox .content h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 400;
   font-size: 20px;
   font-style: italic;
   color: white;
+  text-decoration-line: none;
   text-shadow: 0 0 2px #131212c0;
 }
 
-.contentbox article p {
+.contentbox .content p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 0%;
+  margin-right: 0%;
   color: honeydew;
 }
 
@@ -151,7 +153,91 @@ body {
   margin-right: 15%;
 }
 
-.contentbox .homeinfo p.lastline {
+.contentbox .content p.lastline {
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+.farmImg img {
+  position: relative;
+  height: 150px;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.contentbox .contact p {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.contentbox .contact a {
+  text-decoration-line: none;
+}
+
+.contentbox .content a.find {
+  text-decoration-line: none;
+}
+
+.contentbox address.content {
+  width: 100%;
+  font-style: normal;
+}
+
+.contentbox .addresswrapper .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.contentbox .addresswrapper .content .right,left {
+  width: 50%;
+  height: 170px;
+}
+
+.contentbox form.content .input{
+  display: flex;
+  flex-direction: row;
+}
+
+.contentbox form.content label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 8px;
+  color: honeydew;
+}
+
+.contentbox form.content h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.contentbox form.content input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+.contentbox .contact p.lastline {
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+.contentbox .about p {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.contentbox .about p.lastline {
   color: white;
   font-style: italic;
   text-align: center;
@@ -194,7 +280,8 @@ footer {
   color: #474747;
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 1200px) {
+
   .navbar a {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -215,9 +302,6 @@ footer {
     background: transparent;
     font-size: 18px;
   }
-}
-
-@media screen and (max-width: 1200px) {
 
   .wrapper {
     height: 100vh;
@@ -244,7 +328,7 @@ footer {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    margin-top: 160px;
+    margin-top: 220px;
     height: 100ch;
   }
 
