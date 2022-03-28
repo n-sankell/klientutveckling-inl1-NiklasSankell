@@ -140,23 +140,26 @@ body {
   text-shadow: 0 0 2px #131212c0;
 }
 
-.contentbox .content p {
+.contentbox p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin-left: 0%;
-  margin-right: 0%;
   color: honeydew;
 }
 
-.contentbox .homeinfo p {
-  margin-left: 15%;
-  margin-right: 15%;
+.contentbox p.mainParagraph {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .contentbox .content p.lastline {
   color: white;
   font-style: italic;
   text-align: center;
+}
+
+.contentbox p.historyParagraph {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .farmImg img {
@@ -191,7 +194,7 @@ body {
   width: 100%;
 }
 
-.contentbox .addresswrapper .content .right,left {
+.contentbox .addresswrapper .content .right,.left {
   width: 50%;
   height: 170px;
 }
