@@ -157,6 +157,33 @@ body {
   text-align: center;
 }
 
+.gradeContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.gradeContainer h3.grade {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  text-decoration-line: none;
+  text-shadow: 0 0 2px #131212c0;
+}
+
+.review {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px white;
+}
+
+.review:nth-child(1) {
+  border-top: solid 0px white;
+}
+
 .contentbox p.historyParagraph {
   margin-left: 5%;
   margin-right: 5%;
@@ -246,12 +273,15 @@ body {
   text-align: center;
 }
 
-.antiquewoolcombs {
-  align-self: flex-start;
-  background-image: url("../images/bg/antiquewoolcombs.jpg");
-  background-size: cover;
-  height: 200px;
-  width: 300px;
+img.employee {
+  height: 100px;
+}
+
+.contentbox label {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-style: italic;
+  text-align: center;
 }
 
 main {
