@@ -207,7 +207,7 @@ body {
 }
 
 img.employee {
-  filter: grayscale(60%);
+  filter: grayscale(80%);
   border-radius: 5px;
   height: 120px;
 }
@@ -248,7 +248,7 @@ img.employee:hover {
 
 .farmImg img {
   position: relative;
-  filter: grayscale(60%);
+  filter: grayscale(80%);
   height: 150px;
   border-radius: 5px;
   z-index: 0;
