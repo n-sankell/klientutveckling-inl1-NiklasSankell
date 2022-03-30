@@ -17,54 +17,59 @@
                 <div class="logospace">
                     <img src="../images/logos/logo.png" alt="Ullinish - Logo" />
                 </div>
-            <nav>
-                <div class="navbar">            
-                    <a href="index.html">Start</a>
-                    <a href="about.html">About</a>
-                    <a href="references.html">References</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </nav>
+                <nav>
+                    <div class="navbar">            
+                        <a href="index.html">Start</a>
+                        <a href="about.html" style="color: antiquewhite; text-shadow: 0 0 8px #131212;">About</a>
+                        <a href="references.html">References</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
             </header>
 
             <main>
                 <div class="contentbox">
                     <article class="content" class="history">
                         <h1>Where it all started</h1>
-                        <h2>The story about Ullinish - A story about a family</h2>
                         <p class="historyParagraph">  
                             For five generations, we have been breeding sheep. The herd is part of the family and we tend to all of their special sheep-needs and harvest their precious wool.
-                            <br />We put great pride in our craft and care about our herd with as much love as the human heart can offer.
-                            The harvested wool gets treated with skilled hands, knowledge passed down between generations. <br /> All natural and 100% hand made. <br />
+                            We put great pride in our craft and care about our herd with as much love as the human heart can offer.
+                            The harvested wool gets treated with skilled hands, knowledge passed down between generations. All natural and 100% hand made. 
                         </p>
                     </article>
                     <article class="content" class="thisIsUs">
-                        <h2>This is us</h2>
+                        <h2>The story about Ullinish - A story about a family</h2>
                         <div class="pictures">
                             <div class="employeeContainer">
-                                <div class="picContainer"><img class="employee" id="ceo" src="../images/informative/employee_ceo.jpg" alt="CEO - Maggie"></div>
+                                <div class="picContainer"><img class="employee" id="ceo" src="../images/informative/employee_ceo.jpg" alt="CEO - Maggie" onclick="window.open(this.src)"></div>
                                 <div class="labelContainer"><label for="ceo">CEO - Maggie</label></div>
                             </div>
                             <div class="employeeContainer">
-                                <div class="picContainer"><img class="employee" id="designer" src="../images/informative/employee_designer.jpg" alt="Designer - Margot"></div>
+                                <div class="picContainer"><img class="employee" id="designer" src="../images/informative/employee_designer.jpg" alt="Designer - Margot" onclick="window.open(this.src)"></div>
                                 <div class="labelContainer"><label for="designer">Designer - Margot</label></div>
                             </div>
                             <div class="employeeContainer">
-                                <div class="picContainer"><img class="employee" id="sheperd" src="../images/informative/employee_sheperd.jpg" alt="Sheperd - Willie"></div>
+                                <div class="picContainer"><img class="employee" id="sheperd" src="../images/informative/employee_sheperd.jpg" alt="Sheperd - Willie" onclick="window.open(this.src)"></div>
                                 <div class="labelContainer"><label for="sheperd">Sheperd - Willie</label></div>
                             </div>
                             <div class="employeeContainer">
-                                <div class="picContainer"><img class="employee" id="woolcutter" src="../images/informative/employee_woolcutter.jpg" alt="Woolcutter - Tommy"></div>
+                                <div class="picContainer"><img class="employee" id="woolcutter" src="../images/informative/employee_woolcutter.jpg" alt="Woolcutter - Tommy" onclick="window.open(this.src)"></div>
                                 <div class="labelContainer"><label for="woolcutter">Woolcutter - Tommy</label></div>
                             </div>
                             <div class="employeeContainer">
-                                <div class="picContainer"><img class="employee" id="spinner" src="../images/informative/employee_spinner.jpg" alt="Thread spinner - Ailsi"></div>
+                                <div class="picContainer"><img class="employee" id="spinner" src="../images/informative/employee_spinner.jpg" alt="Thread spinner - Ailsi" onclick="window.open(this.src)"></div>
                                 <div class="labelContainer"><label for="spinner">Thread spinner - Ailsi</label></div>
                             </div>
                             <div class="employeeContainer">
-                                <div class="picContainer"><img class="employee" id="care" src="../images/informative/employee_animalcare.jpg" alt="Animal care - Lewis"></div>
-                                <div class="labelContainer"><label for="care" >Animal care - Lewis</label></div>
+                                <div class="picContainer"><img class="employee" id="care" src="../images/informative/employee_animalcare.jpg" alt="Animal care - Lewis" onclick="window.open(this.src)"></div>
+                                <div class="labelContainer"><label for="care">Animal care - Lewis</label></div>
                             </div>
+                        </div>
+                        <div class="infoContainer" id="infoContainer">
+                            <p>
+                                <br />
+                                Hover over a picture to show more info
+                            </p>
                         </div>
                     </article>
                 </div>
@@ -106,6 +111,6 @@
             </footer>
         </div>
     </div>
-
+    <script src="../script/about.js" />
 </body>
 </html>

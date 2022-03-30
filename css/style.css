@@ -202,7 +202,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 img.employee {
@@ -210,10 +211,32 @@ img.employee {
   height: 120px;
 }
 
+.infoContainer {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100px;
+  width: 90%;
+}
+
+.infoContainer h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  text-shadow: 0 0 2px #131212c0;
+}
+
+.infoContainer p {
+  text-align: center;
+}
+
 .contentbox label {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   text-align: center;
 }

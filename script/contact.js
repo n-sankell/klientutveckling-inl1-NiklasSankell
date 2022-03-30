@@ -7,3 +7,4 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     console.log(`Errand: ${errand.value} Email: ${email.value} Text: ${text.value}`)
 });
+
