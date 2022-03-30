@@ -207,15 +207,20 @@ body {
 }
 
 img.employee {
+  filter: grayscale(60%);
   border-radius: 5px;
   height: 120px;
+}
+
+img.employee:hover {
+  filter: grayscale(0%);
 }
 
 .infoContainer {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-  height: 100px;
+  height: 120px;
   width: 90%;
 }
 
@@ -223,7 +228,7 @@ img.employee {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   color: white;
   text-shadow: 0 0 2px #131212c0;
@@ -243,9 +248,14 @@ img.employee {
 
 .farmImg img {
   position: relative;
+  filter: grayscale(60%);
   height: 150px;
   border-radius: 5px;
   z-index: 0;
+}
+
+.farmImg img:hover {
+  filter: grayscale(0%);
 }
 
 .contentbox .contact p {
