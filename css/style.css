@@ -78,7 +78,7 @@ body {
 
 .aboutbg::after {
   background-image: url("../images/bg/sheepherd.jpg");
-  margin-top: 150px;
+  margin-top: 250px;
   height: 100ch;
 }
 
@@ -90,7 +90,7 @@ body {
 
 .refbg::after {
   background-image: url("../images/bg/yarnclose.jpg");
-  margin-top: 150px;
+  margin-top: 250px;
   height: 100ch;
 }
 
